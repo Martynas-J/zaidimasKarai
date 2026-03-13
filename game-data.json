@@ -1,0 +1,243 @@
+{
+  "game": {
+    "name": "Imperija",
+    "version": "1.0.0",
+    "type": "strategy"
+  },
+  "buildings": {
+    "main": {
+      "id": "main",
+      "name": "Rotušė",
+      "icon": "🏛️",
+      "maxLevel": 20,
+      "costs": [
+        {"wood": 100, "clay": 100, "iron": 100, "crop": 100},
+        {"wood": 150, "clay": 150, "iron": 150, "crop": 150},
+        {"wood": 250, "clay": 250, "iron": 250, "crop": 250},
+        {"wood": 400, "clay": 400, "iron": 400, "crop": 400},
+        {"wood": 600, "clay": 600, "iron": 600, "crop": 600},
+        {"wood": 1000, "clay": 1000, "iron": 1000, "crop": 1000},
+        {"wood": 1500, "clay": 1500, "iron": 1500, "crop": 1500},
+        {"wood": 2500, "clay": 2500, "iron": 2500, "crop": 2500},
+        {"wood": 4000, "clay": 4000, "iron": 4000, "crop": 4000},
+        {"wood": 6000, "clay": 6000, "iron": 6000, "crop": 6000}
+      ],
+      "production": {"population": 5},
+      "description": "Pagrindinis pastatas - padidina gyventojų limitą"
+    },
+    "warehouse": {
+      "id": "warehouse",
+      "name": "Sandėlys",
+      "icon": "🏚️",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 150, "clay": 100, "iron": 0, "crop": 50},
+        {"wood": 250, "clay": 200, "iron": 0, "crop": 100},
+        {"wood": 400, "clay": 300, "iron": 0, "crop": 150},
+        {"wood": 600, "clay": 500, "iron": 0, "crop": 250},
+        {"wood": 1000, "clay": 800, "iron": 0, "crop": 400}
+      ],
+      "description": "Saugo resursus"
+    },
+    "barracks": {
+      "id": "barracks",
+      "name": "Kareivinės",
+      "icon": "⚔️",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 200, "clay": 50, "iron": 150, "crop": 50},
+        {"wood": 350, "clay": 100, "iron": 250, "crop": 100},
+        {"wood": 550, "clay": 150, "iron": 400, "crop": 150},
+        {"wood": 900, "clay": 250, "iron": 600, "crop": 250},
+        {"wood": 1400, "clay": 400, "iron": 900, "crop": 400}
+      ],
+      "description": "Moko pėstininkus"
+    },
+    "stable": {
+      "id": "stable",
+      "name": "Arklidės",
+      "icon": "🐎",
+      "maxLevel": 5,
+      "costs": [
+        {"wood": 250, "clay": 100, "iron": 200, "crop": 100},
+        {"wood": 400, "clay": 200, "iron": 350, "crop": 200},
+        {"wood": 650, "clay": 300, "iron": 550, "crop": 300},
+        {"wood": 1000, "clay": 500, "iron": 800, "crop": 500},
+        {"wood": 1600, "clay": 800, "iron": 1200, "crop": 800}
+      ],
+      "description": "Moko raitelius"
+    },
+    "farm": {
+      "id": "farm",
+      "name": "Kluonas",
+      "icon": "🌾",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 50, "clay": 50, "iron": 0, "crop": 10},
+        {"wood": 100, "clay": 100, "iron": 0, "crop": 20},
+        {"wood": 200, "clay": 200, "iron": 0, "crop": 30},
+        {"wood": 350, "clay": 350, "iron": 0, "crop": 50},
+        {"wood": 550, "clay": 550, "iron": 0, "crop": 80}
+      ],
+      "production": {"crop": 3},
+      "description": "Augina kviečius"
+    },
+    "lumber": {
+      "id": "lumber",
+      "name": "Miškas",
+      "icon": "🪵",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 50, "clay": 100, "iron": 50, "crop": 25},
+        {"wood": 100, "clay": 150, "iron": 100, "crop": 50},
+        {"wood": 200, "clay": 250, "iron": 200, "crop": 75},
+        {"wood": 350, "clay": 400, "iron": 350, "crop": 125},
+        {"wood": 550, "clay": 600, "iron": 550, "crop": 200}
+      ],
+      "production": {"wood": 2},
+      "description": "Kerta medieną"
+    },
+    "clay": {
+      "id": "clay",
+      "name": "Grybų",
+      "icon": "🍄",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 100, "clay": 50, "iron": 50, "crop": 25},
+        {"wood": 150, "clay": 100, "iron": 100, "crop": 50},
+        {"wood": 250, "clay": 200, "iron": 200, "crop": 75},
+        {"wood": 400, "clay": 350, "iron": 350, "crop": 125},
+        {"wood": 600, "clay": 550, "iron": 550, "crop": 200}
+      ],
+      "production": {"clay": 2},
+      "description": "Kasa molį"
+    },
+    "iron": {
+      "id": "iron",
+      "name": "Geležies",
+      "icon": "⛏️",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 100, "clay": 50, "iron": 50, "crop": 25},
+        {"wood": 150, "clay": 100, "iron": 100, "crop": 50},
+        {"wood": 250, "clay": 200, "iron": 200, "crop": 75},
+        {"wood": 400, "clay": 350, "iron": 350, "crop": 125},
+        {"wood": 600, "clay": 550, "iron": 550, "crop": 200}
+      ],
+      "production": {"iron": 2},
+      "description": "Kasa geležį"
+    },
+    "wall": {
+      "id": "wall",
+      "name": "Siena",
+      "icon": "🧱",
+      "maxLevel": 10,
+      "costs": [
+        {"wood": 50, "clay": 100, "iron": 50, "crop": 20},
+        {"wood": 100, "clay": 200, "iron": 100, "crop": 40},
+        {"wood": 200, "clay": 350, "iron": 200, "crop": 80},
+        {"wood": 350, "clay": 550, "iron": 350, "crop": 130},
+        {"wood": 550, "clay": 850, "iron": 550, "crop": 200}
+      ],
+      "defense": 50,
+      "description": "Saugo kaimą nuo puolimų"
+    },
+    "academy": {
+      "id": "academy",
+      "name": "Akademija",
+      "icon": "📚",
+      "maxLevel": 5,
+      "costs": [
+        {"wood": 400, "clay": 200, "iron": 400, "crop": 200},
+        {"wood": 600, "clay": 400, "iron": 600, "crop": 400},
+        {"wood": 1000, "clay": 600, "iron": 1000, "crop": 600},
+        {"wood": 1600, "clay": 1000, "iron": 1600, "crop": 1000},
+        {"wood": 2500, "clay": 1500, "iron": 2500, "crop": 1500}
+      ],
+      "description": "Moko naujus karinius dalinius"
+    }
+  },
+  "units": {
+    "legionary": {
+      "id": "legionary",
+      "name": "Legionierius",
+      "icon": "⚔️",
+      "cost": {"wood": 50, "clay": 50, "iron": 30, "crop": 20},
+      "attack": 40,
+      "defense": 50,
+      "speed": 6,
+      "upkeep": 1,
+      "trainingTime": 1000,
+      "description": "Stiprus pėstininkas"
+    },
+    "eques": {
+      "id": "eques",
+      "name": "Raitelis",
+      "icon": "🐎",
+      "cost": {"wood": 100, "clay": 100, "iron": 40, "crop": 60},
+      "attack": 130,
+      "defense": 40,
+      "speed": 10,
+      "upkeep": 2,
+      "trainingTime": 2000,
+      "description": "Greitas raitelis"
+    },
+    "archer": {
+      "id": "archer",
+      "name": "Lankininkas",
+      "icon": "🏹",
+      "cost": {"wood": 75, "clay": 25, "iron": 50, "crop": 10},
+      "attack": 70,
+      "defense": 30,
+      "speed": 8,
+      "upkeep": 1,
+      "trainingTime": 1500,
+      "description": "Toliašaudis karys"
+    }
+  },
+  "quests": {
+    "quest1": {
+      "id": "quest1",
+      "title": "Pradžia: Pastatyk 1 lygio kluoną",
+      "requirements": {"building": "farm", "level": 1},
+      "rewards": {"xp": 50, "crop": 100},
+      "completed": false
+    },
+    "quest2": {
+      "id": "quest2", 
+      "title": "Išmok kariauti: Užaugink 5 legionierius",
+      "requirements": {"unit": "legionary", "count": 5},
+      "rewards": {"xp": 100, "crop": 200},
+      "completed": false
+    },
+    "quest3": {
+      "id": "quest3",
+      "title": "Statyk MIšką 2 lygio",
+      "requirements": {"building": "lumber", "level": 2},
+      "rewards": {"xp": 75, "wood": 200},
+      "completed": false
+    },
+    "quest4": {
+      "id": "quest4",
+      "title": "Sukurk 3 raitelius",
+      "requirements": {"unit": "eques", "count": 3},
+      "rewards": {"xp": 150, "iron": 300},
+      "completed": false
+    },
+    "quest5": {
+      "id": "quest5",
+      "title": "Pasiek 5 lygį",
+      "requirements": {"level": 5},
+      "rewards": {"xp": 500, "resources": {"wood": 1000, "clay": 1000, "iron": 1000, "crop": 1000}},
+      "completed": false
+    }
+  },
+  "settings": {
+    "mapSize": 20,
+    "startingResources": {"wood": 500, "clay": 500, "iron": 500, "crop": 500},
+    "startingPopulation": 10,
+    "startingMaxPopulation": 100,
+    "resourceTickRate": 1000,
+    "xpMultiplier": 1.0
+  }
+}

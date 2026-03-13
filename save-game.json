@@ -1,0 +1,54 @@
+{
+  "saveVersion": "1.0.0",
+  "saveDate": null,
+  "player": {
+    "name": "Žaidėjas",
+    "village": "Pradinis kaimas"
+  },
+  "resources": {
+    "wood": 500,
+    "clay": 500,
+    "iron": 500,
+    "crop": 500
+  },
+  "population": 10,
+  "maxPopulation": 100,
+  "level": 1,
+  "xp": 0,
+  "xpNeeded": 100,
+  "buildings": {
+    "main": 1,
+    "farm": 1,
+    "lumber": 1,
+    "clay": 1,
+    "iron": 1,
+    "warehouse": 1,
+    "barracks": 0,
+    "stable": 0,
+    "wall": 0,
+    "academy": 0
+  },
+  "units": {
+    "legionary": 0,
+    "eques": 0,
+    "archer": 0
+  },
+  "quests": {
+    "quest1": false,
+    "quest2": false,
+    "quest3": false,
+    "quest4": false,
+    "quest5": false
+  },
+  "statistics": {
+    "totalXP": 0,
+    "buildingsBuilt": 0,
+    "unitsTrained": 0,
+    "attacksWon": 0,
+    "timePlayed": 0
+  },
+  "map": {
+    "x": 10,
+    "y": 10
+  }
+}
